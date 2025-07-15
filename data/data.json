@@ -1,0 +1,90 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "title": "The Warmth Within",
+      "body": "<p>Once upon a chilled evening, the ember in her heart refused to die...</p>",
+      "tags": ["found-family", "healing"],
+      "warnings": [],
+      "author": "camcookie876",
+      "images": [
+        {
+          "filename": "evening.png",
+          "mimeType": "image/png",
+          "content": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA…", 
+          "alt": "Glowing ember under starry sky"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Storm of Thoughts",
+      "body": "<p>Raindrops tapped like a restless mind does in the dead of night...</p>",
+      "tags": ["introspection", "mood"],
+      "warnings": ["mild violence"],
+      "author": "nestlingDreams",
+      "images": []
+    }
+  ],
+
+  "codeProjects": [
+    {
+      "id": 101,
+      "name": "HelloCamcookie",
+      "files": [
+        {
+          "filename": "index.html",
+          "content": "<!DOCTYPE html><html><body><h1>Hello Camcookie!</h1></body></html>"
+        },
+        {
+          "filename": "script.js",
+          "content": "console.log('Welcome to CookieCode');"
+        }
+      ],
+      "tags": ["demo", "starter"],
+      "author": "codeWizard"
+    }
+  ],
+
+  "collections": [
+    {
+      "id": 501,
+      "name": "Winter Comfort",
+      "items": [
+        { "type": "story", "id": 1 },
+        { "type": "story", "id": 2 },
+        { "type": "code", "id": 101 }
+      ],
+      "author": "camcookie876"
+    }
+  ],
+
+  "users": [
+    {
+      "username": "camcookie876",
+      "displayName": "Camden the Creator",
+      "avatar": {
+        "mimeType": "image/png",
+        "content": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA…"
+      },
+      "bio": "Builder of cozy corners online."
+    },
+    {
+      "username": "nestlingDreams",
+      "displayName": "NestlingDreams",
+      "avatar": null,
+      "bio": ""
+    }
+  ],
+
+  "tags": [
+    { "tag": "found-family", "description": "Stories about chosen bonds and safety." },
+    { "tag": "healing",      "description": "Journeys of recovery and hope." },
+    { "tag": "introspection","description": "Deep dives into one’s inner world." },
+    { "tag": "mood",         "description": "Pieces driven by atmosphere and feeling." },
+    { "tag": "demo",         "description": "Sample code projects to kickstart your own." },
+    { "tag": "starter",      "description": "Beginner-friendly code templates." }
+  ],
+
+  "moderationLog": []
+}

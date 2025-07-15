@@ -1,0 +1,37 @@
+<!-- auth/github/callback/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>GitHub OAuth Callback</title>
+  <link rel="stylesheet" href="../../assets/style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Signing you in…</h1>
+    <p>Please wait a moment.</p>
+  </main>
+
+  <script>
+    (async function(){
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      if (!code) return;
+
+      // Call your serverless function
+      const resp = await fetch(
+        '/.netlify/functions/github-callback?code=' + code
+      );
+      const { profile, token } = await resp.json();
+
+      // Persist user
+      localStorage.setItem('currentUser', profile.login);
+      localStorage.setItem('gh_token', token);
+
+      // Redirect back to the profile page
+      window.location.href = '/account/';
+    })();
+  </script>
+</body>
+</html>
