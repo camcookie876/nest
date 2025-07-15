@@ -1,0 +1,87 @@
+<!-- story/create/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Story • Camcookie Nest</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+<body>
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../../" class="logo">Camcookie Nest</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../story/">Stories</a></li>
+          <li><a href="../../code/">CookieCode</a></li>
+          <li><a href="../../tag/">Tags</a></li>
+          <li><a href="../../search/">Search</a></li>
+          <li><a href="../../account/">Account</a></li>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../guidelines/">Guidelines</a></li>
+          <li><a href="../../privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" action="../../search/" method="get">
+        <input
+          type="text"
+          name="query"
+          placeholder="Search stories, tags…"
+          aria-label="Search Camcookie Nest"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Story Creation Form -->
+  <main class="container">
+    <h1>Write a New Story</h1>
+    <form id="story-form">
+      <label for="story-title">Title (optional)</label>
+      <input type="text" id="story-title" name="title" placeholder="A gentle title…" />
+
+      <label for="story-body">Content</label>
+      <textarea id="story-body" name="body" rows="10" placeholder="Tell your tale…"></textarea>
+
+      <label for="story-tags">Tags (comma-separated)</label>
+      <input type="text" id="story-tags" name="tags" placeholder="healing, found-family, hope" />
+
+      <label for="story-warnings">Content Warnings (optional)</label>
+      <input type="text" id="story-warnings" name="warnings" placeholder="violence, strong language" />
+
+      <label for="story-images">Upload Images (optional)</label>
+      <input
+        type="file"
+        id="story-images"
+        name="images"
+        accept="image/*"
+        multiple
+      />
+
+      <button type="submit" class="btn">Publish Story</button>
+      <p id="save-status" class="save-status">Draft auto-saved.</p>
+    </form>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Camcookie Nest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../guidelines/">Community Guidelines</a></li>
+          <li><a href="../../privacy/">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Site-wide Script -->
+  <script src="../../assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!-- privacy/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy • Camcookie Nest</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../" class="logo">Camcookie Nest</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../story/">Stories</a></li>
+          <li><a href="../code/">CookieCode</a></li>
+          <li><a href="../tag/">Tags</a></li>
+          <li><a href="../search/">Search</a></li>
+          <li><a href="../account/">Account</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../guidelines/">Guidelines</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" action="../search/" method="get">
+        <input
+          type="text"
+          name="query"
+          placeholder="Search stories, tags…"
+          aria-label="Search Camcookie Nest"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p>
+      At Camcookie Nest, your privacy matters. We collect only the minimal
+      data needed to run this site:
+    </p>
+    <ul>
+      <li>
+        <strong>Content & Profiles:</strong> Stored in <code>data/data.json</code>. 
+        No external databases or third-party storage services.
+      </li>
+      <li>
+        <strong>Guest Preferences:</strong> Saved locally via <code>localStorage</code>.
+      </li>
+      <li>
+        <strong>Images & Files:</strong> Embedded as base64 in <code>data.json</code>.
+      </li>
+      <li>
+        <strong>No Tracking:</strong> We do not use cookies, analytics, or
+        advertising trackers.
+      </li>
+      <li>
+        <strong>Security:</strong> Admin actions, moderation logs, and
+        user sessions are protected and only accessible by the site owner.
+      </li>
+    </ul>
+    <p>
+      You have full control: you can clear your local data anytime from your
+      browser’s settings. Thank you for trusting Camcookie Nest with your
+      stories, code, and creativity.
+    </p>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Camcookie Nest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../guidelines/">Community Guidelines</a></li>
+          <li><a href="../privacy/">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Site-wide Script -->
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>

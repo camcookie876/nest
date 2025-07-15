@@ -1,0 +1,125 @@
+<!-- code/create/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>New CookieCode Project • Camcookie Nest</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+<body>
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../../" class="logo">Camcookie Nest</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../story/">Stories</a></li>
+          <li><a href="../../code/">CookieCode</a></li>
+          <li><a href="../../tag/">Tags</a></li>
+          <li><a href="../../search/">Search</a></li>
+          <li><a href="../../account/">Account</a></li>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../guidelines/">Guidelines</a></li>
+          <li><a href="../../privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+      <form
+        class="search-form"
+        action="../../search/"
+        method="get"
+      >
+        <input
+          type="text"
+          name="query"
+          placeholder="Search stories, tags…"
+          aria-label="Search Camcookie Nest"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- New CookieCode Project Form -->
+  <main class="container">
+    <h1>Create a New CookieCode Project</h1>
+    <form id="code-form">
+      <label for="project-name">Project Name</label>
+      <input
+        type="text"
+        id="project-name"
+        name="name"
+        placeholder="My Awesome Project"
+        required
+      />
+
+      <section id="file-manager">
+        <h2>Files</h2>
+        <ul id="file-list">
+          <!-- app.js will list current files here -->
+        </ul>
+        <button
+          type="button"
+          id="add-file-btn"
+          class="btn btn-secondary"
+        >
+          + Add File
+        </button>
+      </section>
+
+      <section id="editor-section">
+        <h2>Editor</h2>
+        <label for="current-filename">Filename</label>
+        <input
+          type="text"
+          id="current-filename"
+          readonly
+        />
+
+        <label for="code-editor">Code</label>
+        <textarea
+          id="code-editor"
+          rows="15"
+          placeholder="// Your code here…"
+        ></textarea>
+
+        <button
+          type="button"
+          id="save-file-btn"
+          class="btn"
+        >
+          Save File
+        </button>
+      </section>
+
+      <button type="submit" class="btn">
+        Publish Project
+      </button>
+      <p id="save-status" class="save-status">
+        Draft auto-saved.
+      </p>
+    </form>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Camcookie Nest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../guidelines/">Community Guidelines</a></li>
+          <li><a href="../../privacy/">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="../../assets/app.js" defer></script>
+</body>
+</html>

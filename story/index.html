@@ -1,0 +1,70 @@
+<!-- story/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Story • Camcookie Nest</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../" class="logo">Camcookie Nest</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../story/">Stories</a></li>
+          <li><a href="../code/">CookieCode</a></li>
+          <li><a href="../tag/">Tags</a></li>
+          <li><a href="../search/">Search</a></li>
+          <li><a href="../account/">Account</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../guidelines/">Guidelines</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" action="../search/" method="get">
+        <input
+          type="text"
+          name="query"
+          placeholder="Search stories, tags…"
+          aria-label="Search Camcookie Nest"
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Story Content -->
+  <main class="container">
+    <article id="story-content">
+      <!-- app.js will fetch ?id= and inject title, HTML body, author -->
+    </article>
+    <div id="story-images" class="media-gallery">
+      <!-- app.js will render any embedded images here -->
+    </div>
+    <div id="story-tags" class="tags-list">
+      <!-- app.js will render <a href="../tag/?tag=…">#tag</a> links -->
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Camcookie Nest. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../guidelines/">Community Guidelines</a></li>
+          <li><a href="../privacy/">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Site-wide Script -->
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>
